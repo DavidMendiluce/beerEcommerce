@@ -1,0 +1,299 @@
+html {
+
+}
+
+.overflowme {
+  overflow: hidden;
+}
+
+.scrollme {
+  overflow-y: scroll;
+}
+
+.hideme {
+  display: none !important;
+}
+
+.showme {
+  display: block !important;
+}
+
+body {
+  background: url("../img/BackgroundCaveFixed.jpg");
+}
+
+.beersTable h1{
+  color: white;
+  z-index: 3;
+}
+
+#catalogContainer {
+  display: block;
+  position: relative;
+  width: 100%;
+  top: 50vh;
+  left: 0vh;
+}
+
+#catalogContainer img{
+  width: 20vh;
+  height: 30vh;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden !important;
+}
+
+nav span{
+  color: white;
+  font-size: 3vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  text-align: center;
+}
+
+nav li {
+  height: 5vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+nav li a {
+  border-radius: 1.5vh;
+  border: 1px solid rgba(125, 121, 112,1);
+  background-color: rgba(242, 195, 51,1);
+  text-decoration: none;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  border: 1px solid rgba(125, 121, 112,1);
+  background-color: rgba(242, 195, 51,0.9);
+}
+
+nav li a:active {
+  text-decoration: none;
+  border: 1px solid rgba(125, 121, 112,1);
+  background-color: rgba(242, 195, 51,0.9);
+}
+
+nav ul {
+  margin-left: 95vh;
+  margin-top: -12vh;
+}
+
+#logo {
+  position: relative;
+  right: 8vh;
+  top: -2vh;
+}
+
+#logo img {
+  width: 50vh;
+  height: 30vh;
+}
+
+.catalogButton {
+  position: relative;
+  top: -50vh;
+  z-index: 4;
+  background-color: black;
+  height: 22vh;
+  width: 60vh;
+  left: 105vh;
+  border-radius: 1vh;
+}
+
+.catalogButton p {
+  color: white;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+}
+
+.catalogButton a {
+  position: relative;
+  text-decoration: none;
+  border: 1px solid rgba(173, 135, 16,1);
+  border-radius: 1.5vh;
+  top: 4vh;
+  left: 17vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  color: rgba(125, 121, 112,1);
+  cursor: pointer;
+}
+
+.catalogButton span {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.catalogButton a:hover {
+  background-color: #f2c333;
+  color: white;
+}
+
+.currentBeer {
+  opacity: 0.5;
+}
+
+.lightme {
+  opacity: 0.9 !important;
+}
+
+.darkenme {
+  opacity: 0.5 !important;
+}
+
+.beerMainPage {
+  opacity: 0;
+  z-index: 0;
+  position: relative;
+  top: 10vh;
+  left: 150vh;
+  width: 70vh;
+  height: 70vh;
+}
+
+#beerContainer {
+  position: relative;
+  right: 100vh;
+}
+
+#beerTable {
+  position: relative;
+  top: -53vh;
+  left: 110vh;
+  table-layout: fixed;
+  border-collapse: separate !important;
+  border-spacing: 2vh 0 !important;
+  border: 0px solid transparent;
+}
+
+
+.separator {
+  border: 1px solid red;
+  margin-bottom: 10vh;
+}
+
+#beerTable th {
+  visibility: hidden;
+  border: none !important;
+}
+
+#beerTable tbody {
+  border: none !important;
+}
+
+.dataTables_length {
+  visibility: hidden;
+}
+
+#beerTable thead {
+
+  border: none !important;
+}
+
+#beerTable td {
+  padding-top: 25vh;
+  padding-bottom: 8vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  width: 20vh !important;
+  border: none !important;
+  z-index: 2 !important;
+}
+
+#beerTable tr {
+  border: none !important;
+}
+
+.glow {
+  -webkit-filter: drop-shadow(0px 12px 12px rgba(235, 235, 235, 0.5));
+     filter: drop-shadow(0px 12px 12px rgba(235, 235, 235, 0.5));
+}
+
+#beerTable img {
+  position: relative;
+  top: 2vh;
+  width: 10vh;
+  height: 10vh;
+  z-index: 10 !important;
+  opacity: 0.7;
+}
+
+#beerTable td:hover {
+  cursor: pointer;
+}
+
+#beerContainer h2 {
+  color white;
+}
+
+#beerModal {
+ display: none;
+ position: fixed;
+ top: 15%;
+ left: -30%;
+ z-index: 100;
+}
+
+#beerModal .modal-content {
+  width: 100vh;
+
+}
+
+#beerModal img {
+  position: relative;
+  right: 10vh;
+  height: 60vh;
+  width: 60vh;
+}
+
+#beerModal p {
+  position: relative;
+  left: 45vh;
+  top: -55vh;
+}
+
+.btnCart {
+  position: relative;
+  background-color: rgba(
+255, 187, 0
+,1);
+  top: -15vh;
+  left: 60vh;
+  padding-left: 5vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-right: 5vh;
+  border-radius: 1vh;
+  border: 0.1vh solid rgba(181, 176, 165,0.3);
+}
+
+.btnCart span {
+  color: white;
+  font-size: 3.5vh;
+  text-shadow: -1px 0 rgba(181, 176, 165,0.3), 0 1px rgba(181, 176, 165,0.3), 1px 0 rgba(181, 176, 165,0.3), 0 -1px rgba(181, 176, 165,0.3);
+}
+
+.btnCart i {
+  position: relative;
+  text-shadow: -1px 0 rgba(181, 176, 165,0.3), 0 1px rgba(181, 176, 165,0.3), 1px 0 rgba(181, 176, 165,0.3), 0 -1px rgba(181, 176, 165,0.3);
+  left: 3vh;
+  color: white;
+}
+
+.btnCart:hover {
+  cursor: pointer;
+  background-color: rgba(
+204, 150, 0
+,1);
+}
